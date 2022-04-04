@@ -1,0 +1,21 @@
+[package]
+name = "toybox"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+chumsky = "0.8.0"
+termion = { version = "1.5.6", optional = true }
+wasm-bindgen = "0.2.79"
+
+[features]
+build-binary = ["termion"]
+
+[[bin]]
+name = "toybox"
+required-features = ["build-binary"]

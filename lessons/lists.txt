@@ -1,0 +1,5 @@
+>> let shopping_list = ["Eggs", "Bacon", "Milk", "Bread"]
+.. This is a list they are created by surrounding the items in square
+brackets ('[' and ']')
+!! Create a new shopping list with the elements Scissors and String
+<< variable with ["Scissors", "String"]

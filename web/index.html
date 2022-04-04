@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>hello-wasm example</title>
+    <link href="http://fonts.cdnfonts.com/css/liberation-sans?styles=575" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/liberation-mono" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="blocks">
+      <div id="outputs">
+        <h1>Playpen</h1>
+        <pre id="input" class="code language-toybox" contenteditable="true" autocorrect="off"
+        autocapitalize="off" spellcheck="false" data-ph="Type Your Code Here"></pre>
+      </div>
+      <div class="error" id="live-error" style="visibility: hidden;">Error: test</div>
+    </div>
+    <script src="https://www.desmos.com/api/v1.6/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+    <script src="Plot.min.js"></script>
+    <script src="misbehave.js"></script>
+    <script src="prism.js"></script>
+    <script type="module">
+      import init, {Interpreter} from "./pkg/toybox.js";
+      init()
+        .then(() => window.interpreter = new Interpreter());
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>

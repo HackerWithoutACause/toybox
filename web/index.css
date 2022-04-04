@@ -1,0 +1,127 @@
+.code {
+    background-color: white;
+    display: block;
+    width: 100%;
+    font-family: "Liberation Mono", monospace;
+    white-space: pre-wrap;
+    color: #393A34;
+    font-size: 16px;
+    padding: 10px;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    border: dashed 2px transparent;
+    line-height: 100%;
+}
+
+* {
+    font-family: "Liberation Sans 700", sans-serif;
+    box-sizing: border-box;
+}
+
+.code span {
+    font-family: "Liberation Mono", monospace;
+}
+
+.error {
+    background: #b74951;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    font-family: "Liberation Mono", monospace;
+}
+
+.info {
+    background: #FFFACD;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    font-family: "Liberation Mono", monospace;
+}
+
+.warning {
+    background: #FFA500;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    font-family: "Liberation Mono", monospace;
+}
+
+.output {
+    font-family: "Liberation Mono", monospace;
+    background: #ddd;
+    padding: 10px;
+    font-size: 16px;
+}
+
+pre {
+    margin: 0;
+}
+
+.token.keyword {
+    color: #00a4db;
+}
+
+.token.literal {
+    color: #36acaa;
+}
+
+.token.string {
+    color: #e3116c;
+}
+
+.token.identifier {
+    color: red;
+}
+
+.blocks {
+    padding: 0 30%;
+}
+
+#input {
+    border-color: #999;
+    outline: none;
+}
+
+#input:focus {
+    border-color: black;
+}
+
+.container {
+    display: block;
+}
+
+.output-value {
+    background-color: #f0f8ff;
+    display: block;
+    width: 100%;
+    font-family: "Liberation Mono", monospace;
+    white-space: pre-wrap;
+    color: #393A34;
+    font-size: 16px;
+    padding: 10px;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    border: dashed 2px transparent;
+    line-height: 100%;
+    /* text-align: right; */
+}
+
+.output-value:empty {
+    display: none;
+}
+
+[contentEditable=true]:empty:not(:focus)::before {
+    content:attr(data-ph);
+    color: #555;
+}
+
+[contentEditable=true] {
+    cursor: text;
+}
+
+canvas {
+    position: ;
+    width: 100%;
+}
