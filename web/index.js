@@ -1,4 +1,3 @@
-
 Prism.languages['toybox'] = {
     'keyword': /(^|\W)(def|while|do|end|if|then|for|let|else)(\W|$)/i,
     'literal': /[0-9]+|true|false/,
